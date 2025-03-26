@@ -1,24 +1,96 @@
     body {
      min-width: 600px;
-     margin: 10px 20px; /* Отступы от других элементов */
+     margin: 10px 0px; /* Отступы от других элементов */
     }
   .gray-bkg{
         background: #eeeeee;
     }
+    .top-left{
+      position: absolute;
+      top: 0;
+      left: 10px;  
+     }
     .head-btm-line {
         width: 100%; /* Ширина линии */
         height: 3px; /* Высота линии */
         background-color: rgb(14, 96, 137); /* Цвет линии */
-        margin-top: 5px; /* Отступ сверху */
-        margin-bottom: 10px; /* Отступ снизу */
+        margin: 30px 0px; /* Отступы от других элементов */
       }
       .rounded-image {
         border-radius: 15px; /* Укажите радиус закругления */
-        box-shadow: 0 4px 8px rgba(31, 36, 54, 0.692); /* Настраиваем тень: смещение по X, смещение по Y, размытие, цвет */
+        box-shadow: 0 8px 12px rgba(31, 36, 54, 0.692); /* Настраиваем тень: смещение по X, смещение по Y, размытие, цвет */
+        margin: 5px 30px; /* Отступы от других элементов */
     }
-    .center {
-      text-align: center; /* Центрируем текст (и изображения) */
+     .hover-image {
+       transition: transform 0.3s ease; /* Плавный переход */
+       cursor: pointer; /* Изменяем курсор на указатель */
     }
+      .hover-image:hover {
+       transform: scale(1.3); /* Увеличиваем изображение при наведении */
+    }
+      .center {
+       text-align: center; /* Центрируем текст (и изображения) */
+    }
+    .my-button {
+      margin: 2px 30px; /* Отступы от других элементов */
+      width: 155px;
+      height: 40px;
+      font-size: 11px; /* Размер шрифта */
+      font-weight: bold; /* Или можете использовать font-weight: 700; */
+      background-color:#8d0c2d; /* Цвет фона */
+      color: rgb(6, 1, 1)2, 9, 9)2, 9, 9); /* Цвет текста */
+      border: none; /* Без границы */
+      border-radius: 15px; /* Закругление углов */
+      cursor: pointer; /* Курсор при наведении */
+      box-shadow: 0 8px 12px rgba(31, 36, 54, 0.692); /* Настраиваем тень: смещение по X, смещение по Y, размытие, цвет */
+      transition: background-color 0.3s; /* Плавный переход цвета */
+    }
+    .my-button:hover {
+      background-color: #a42742; /* Цвет фона при наведении */
+    }
+    .my-button:hover {
+      transform: scale(1.1); /* Увеличиваем изображение при наведении */
+   }
+   .my-button1 {
+    margin: 2px 30px; /* Отступы от других элементов */
+    width: 155px;
+    height: 40px;
+    font-size: 11px; /* Размер шрифта */
+    font-weight: bold; /* Или можете использовать font-weight: 700; */
+    background-color:#1d6174; /* Цвет фона */
+    color: rgb(6, 1, 1)2, 9, 9)2, 9, 9); /* Цвет текста */
+    border: none; /* Без границы */
+    border-radius: 15px; /* Закругление углов */
+    cursor: pointer; /* Курсор при наведении */
+    box-shadow: 0 8px 12px rgba(31, 36, 54, 0.692); /* Настраиваем тень: смещение по X, смещение по Y, размытие, цвет */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+  }
+  .my-button1:hover {
+    background-color: #1c8cac; /* Цвет фона при наведении */
+  }
+  .my-button1:hover {
+    transform: scale(1.1); /* Увеличиваем изображение при наведении */
+ }
+ .my-button2 {
+  margin: 2px 30px; /* Отступы от других элементов */
+  width: 155px;
+  height: 40px;
+  font-size: 11px; /* Размер шрифта */
+  font-weight: bold; /* Или можете использовать font-weight: 700; */
+  background-color:#1aa406; /* Цвет фона */
+  color: rgb(6, 1, 1)2, 9, 9)2, 9, 9); /* Цвет текста */
+  border: none; /* Без границы */
+  border-radius: 15px; /* Закругление углов */
+  cursor: pointer; /* Курсор при наведении */
+  box-shadow: 0 8px 12px rgba(31, 36, 54, 0.692); /* Настраиваем тень: смещение по X, смещение по Y, размытие, цвет */
+  transition: background-color 0.3s; /* Плавный переход цвета */
+}
+.my-button2:hover {
+  background-color: #57e641; /* Цвет фона при наведении */
+}
+.my-button2:hover {
+  transform: scale(1.1); /* Увеличиваем изображение при наведении */
+}
  
 
 
