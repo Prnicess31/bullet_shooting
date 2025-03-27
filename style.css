@@ -1,5 +1,5 @@
     body {
-     min-width: 600px;
+     min-width: 1000px;
      margin: 10px 0px; /* Отступы от других элементов */
     }
   .gray-bkg{
@@ -16,10 +16,18 @@
         background-color: rgb(14, 96, 137); /* Цвет линии */
         margin: 30px 0px; /* Отступы от других элементов */
       }
+      .container1 {
+        display: grid; /* Используем grid layout */
+        grid-template-columns:1fr 5fr;; /* Две колонки с равной шириной */
+        align-items: center; /* Выравнивание по центру по горизонтали */
+        justify-content: center; /* Выравнивание по центру по вертикали */
+        gap: 150px; /* Промежуток между колонками */
+        margin: 20px 20px; /* Отступы от других элементов */
+      }
       .rounded-image {
         border-radius: 15px; /* Укажите радиус закругления */
         box-shadow: 0 8px 12px rgba(31, 36, 54, 0.692); /* Настраиваем тень: смещение по X, смещение по Y, размытие, цвет */
-        margin: 5px 30px; /* Отступы от других элементов */
+        margin: 5px 20px; /* Отступы от других элементов */
     }
      .hover-image {
        transition: transform 0.3s ease; /* Плавный переход */
@@ -32,7 +40,7 @@
        text-align: center; /* Центрируем текст (и изображения) */
     }
     .my-button {
-      margin: 2px 30px; /* Отступы от других элементов */
+      margin: 2px 20px; /* Отступы от других элементов */
       width: 155px;
       height: 40px;
       font-size: 11px; /* Размер шрифта */
@@ -52,7 +60,7 @@
       transform: scale(1.1); /* Увеличиваем изображение при наведении */
    }
    .my-button1 {
-    margin: 2px 30px; /* Отступы от других элементов */
+    margin: 2px 20px; /* Отступы от других элементов */
     width: 155px;
     height: 40px;
     font-size: 11px; /* Размер шрифта */
@@ -72,7 +80,7 @@
     transform: scale(1.1); /* Увеличиваем изображение при наведении */
  }
  .my-button2 {
-  margin: 2px 30px; /* Отступы от других элементов */
+  margin: 2px 20px; /* Отступы от других элементов */
   width: 155px;
   height: 40px;
   font-size: 11px; /* Размер шрифта */
@@ -91,6 +99,4 @@
 .my-button2:hover {
   transform: scale(1.1); /* Увеличиваем изображение при наведении */
 }
- 
-
 
