@@ -1,5 +1,5 @@
     body {
-     min-width: 1000px;
+     min-width: 600px;
      margin: 10px 0px; /* Отступы от других элементов */
     }
   .gray-bkg{
@@ -21,7 +21,7 @@
         grid-template-columns:1fr 5fr;; /* Две колонки с равной шириной */
         align-items: center; /* Выравнивание по центру по горизонтали */
         justify-content: center; /* Выравнивание по центру по вертикали */
-        gap: 150px; /* Промежуток между колонками */
+        gap: 200px; /* Промежуток между колонками */
         margin: 20px 20px; /* Отступы от других элементов */
       }
       .rounded-image {
@@ -99,4 +99,71 @@
 .my-button2:hover {
   transform: scale(1.1); /* Увеличиваем изображение при наведении */
 }
+.container2 {
+  display: grid; /* Используем grid layout */
+  grid-template-columns:1fr 5fr;; /* Две колонки с равной шириной */
+  align-items: center; /* Выравнивание по центру по горизонтали */
+  justify-content: center; /* Выравнивание по центру по вертикали */
+  gap: 100px; /* Промежуток между колонками */
+  margin: 20px 20px; /* Отступы от других элементов */
+}
+.s-filter {
+  border: #a8a3b9 1px solid;
+  border-top: rgb(14, 96, 137) 5px solid;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  width: 500px;
+  margin-bottom: 20px;
+  padding: 10px/* сделано */
+}
+.s-filter .summary {
+  display: none;
+  position: relative;
+}
+.text-center {
+  text-align: center;
+  font-size: 14px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.5;
+    overflow-x: hidden;
+    color: #333;
+}
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+summary {
+  list-style: none; /* Убираем маркеры (если есть) */
+  cursor: pointer; /* Указываем, что элемент кликабельный */
+};
+summary::-webkit-details-marker {
+  display: none; /* Убираем стандартный маркер для браузеров на основе WebKit */
+}
+summary::after {
+  content: "▶"; /* Добавляем стрелку (по умолчанию развёрнутая) */
+  display: inline-block;
+  margin-left: 5px; /* Отступ между текстом и стрелкой */
+  transition: transform 0.2s; /* Форма стрелки будет изменяться плавно */
+}
+details[open] summary::after {
+  transform: rotate(90deg); /* Поворачиваем стрелку на 90 градусов при открытом состоянии */
+}
+summary, a {
+  outline: none !important;
+}
+.clearfix {
+color: #020303;
+list-style: none;
+background: #fefcfd;
+position: relative;
+font-size: 14px; /* Размер шрифта */
+font-weight: bold; /* Или можете использовать font-weight: 700; */
+margin: 5px 5px; /* Отступы от других элементов */
+}
+select{
+  margin: 5px 0px;  
+}
+span{
 
+}

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт-визитка</title>
+    <meta name="description" content="Календарь соревнований">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="calendar.js"></script>
 </head>
     <div class="panel">
         <header class="head-panel"></div>
@@ -16,45 +18,130 @@
     </div>   
     <body>
         <div class="intro-block caption">
-            <div class="container">
-                <div class="row">
+            <div class="container2">
+                <div class="column">
                     <div class="col-lg-9">
                         <div class="box">
-                            <div class="row px-2">
+                            <div class="column px-2">
                                 <div class="col-lg-4 col-6 px-2 pb-3">
-                                    <img src="img/calendar.jpg" alt="календарь" class="rounded-image" width="155">
+                                      <div>
+                                         <img src="img/calendar.jpg" alt="календарь" class="rounded-image"  width="155">
+                                      </div>
+                                     <div>
+                                     <a href="index.html"><!-- Укажите имя файла или URL страницы, на которую нужно перейти -->
+                                         <button class="my-button">СПОРТИВНАЯ СТРАНИЦА</button>
+                                     </a>
+                                     </div>
+                                     <div>
+                                         <button class="my-button1">ТНЕНЕРСКИЙ СОСТАВ</button>
+                                     </div>
+                                     <div>
+                                         <button class="my-button2">ПОРЯДОК ПОСЕЩЕНИЯ МЕСТА СОРЕВНОВАНИЙ</button>
+                                     </div>
+                                     <div>
+                                         <button class="my-button1">БИБЛИОТЕКА</button>
+                                     </div>
+                                     <div>
+                                         <a href="karta.html"><!-- Укажите имя файла или URL страницы, на которую нужно перейти -->
+                                              <button class="my-button2">МЕСТО ПРОВЕДЕНИЯ СОРЕВНОВАНИЙ</button>
+                                         </a>
+                                     </div>
+                                     <div>
+                                         <button class="my-button">СПОРТАКИАДА РУКОВОДИТЕЛЕЙ И НАЧАЛЬНИКОВ ОТДЕЛОВ</button>
+                                     </div>
+                                     <div>
+                                         <button class="my-button1">СПОРТАКИАДА ТРУДЯЩИХСЯ</button>
+                                     </div>
+                                     <div>
+                                         <button class="my-button2">ГАЛЕРЕЯ</button>
+                                     </div>
+                                </div> 
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="col-lg-9">
+                        <div class="box">
+                            <div class="right-column px-2">
+                                <div class="col-lg-4 col-6 px-2 pb-3">
+                                    <section class="s-filter">
+                                        <form class="clearfix">
+                                            <details>
+                                                 <summary></summary>
+                                              <div class="clearfix">
+                                                 <div>
+                                                     <label>
+                                                         <span>УРОВЕНЬ СОРЕВНОВАНИЯ</span>
+                                                         <select name="category" class="select2 select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                                                <option value="" data-select2-id="3">&nbsp;</option>
+                                                                <option value="tne_bosses" data-select2-id="32">спортакиада руководителей и начальников отделов</option>
+                                                                <option value="workers" data-select2-id="33">спортакиада трудящиеся</option>
+                                                                <option value="branches" data-select2-id="34">спортакиада филиала</option>
+                                                            </select>
+                                                            <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: auto;">
+                                                                <span class="selection">
+                                                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-view-w2-container">
+                                                                        <span class="select2-selection__rendered" id="select2-view-w2-container" role="textbox" aria-readonly="true" title="&nbsp;">&nbsp;</span>
+                                                                        <span class="select2-selection__arrow" role="presentation">
+                                                                            <b role="presentation"></b>
+                                                                        </span>    
+                                                                    </span>
+                                                                </span>
+                                                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                                            </span>   
+                                                        </label>
+                                                    </div> 
+                                                    <div>   
+                                                        <label>
+                                                         <span>ВИД СТРЕЛЬБЫ</span>
+                                                            <select name="view" class="select2 select2-hidden-accessible" data-select2-id="4" tabindex="-1" aria-hidden="true">
+                                                                <option value="" data-select2-id="6">&nbsp;</option>
+                                                                <option value="bullet">Пулевая</option>
+                                                                <option value="stand">Стендовая</option>
+                                                            </select>
+                                                            <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: auto;">
+                                                                <span class="selection">
+                                                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-view-w2-container">
+                                                                        <span class="select2-selection__rendered" id="select2-view-w2-container" role="textbox" aria-readonly="true" title="&nbsp;">&nbsp;</span>
+                                                                        <span class="select2-selection__arrow" role="presentation">
+                                                                              <b role="presentation"></b>
+                                                                        </span>    
+                                                                    </span>
+                                                                </span>
+                                                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                                            </span>  
+                                                        </label>
+                                                    </div>
+                                                    <label>
+                                                      <span>ГОД</span>
+                                                        <select name="year" class="select2 select2-hidden-accessible" data-select2-id="7" tabindex="-1" aria-hidden="true">
+                                                            <option value data-select2-id="9">&nbsp;</option>
+                                                            <option value="2025">2025</option>
+                                                            <option value="2024">2024</option>
+                                                            <option value="2023">2023</option>
+                                                            <option value="2022">2022</option>
+                                                        </select>
+                                                        <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="8" style="width: auto;">
+                                                            <span class="selection">
+                                                                <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-year-j2-container">
+                                                                    <span class="select2-selection__rendered" id="select2-year-j2-container" role="textbox" aria-readonly="true" title="&nbsp;">&nbsp;</span>
+                                                                    <span class="select2-selection__arrow" role="presentation">
+                                                                        <b role="presentation"></b>
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                            <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </details>
+                                        </form>
+                                    </section>
                                 </div>
-                                <a href="index.html"><!-- Укажите имя файла или URL страницы, на которую нужно перейти -->
-                                    <button class="my-button">СПОРТИВНАЯ СТРАНИЦА</button>
-                                </a>
-                               </div>
-                               <div>
-                                   <button class="my-button1">ТНЕНЕРСКИЙ СОСТАВ</button>
-                               </div>
-                               <div>
-                                   <button class="my-button2">ПОРЯДОК ПОСЕЩЕНИЯ МЕСТА СОРЕВНОВАНИЙ</button>
-                               </div>
-                               <div>
-                                   <button class="my-button1">БИБЛИОТЕКА</button>
-                               </div>
-                               <div>
-                                <a href="karta.html"><!-- Укажите имя файла или URL страницы, на которую нужно перейти -->
-                                   <button class="my-button2">МЕСТО ПРОВЕДЕНИЯ СОРЕВНОВАНИЙ</button>
-                                </a>
-                               </div>
-                               <div>
-                                   <button class="my-button">СПОРТАКИАДА РУКОВОДИТЕЛЕЙ И НАЧАЛЬНИКОВ ОТДЕЛОВ</button>
-                               </div>
-                               <div>
-                                   <button class="my-button1">СПОРТАКИАДА ТРУДЯЩИХСЯ</button>
-                               </div>
-                               <div>
-                                   <button class="my-button2">ГАЛЕРЕЯ</button>
-                               </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>        
         </div>
