@@ -128,9 +128,7 @@
 }
 .container2 {
   display: grid; /* Используем grid layout */
-  grid-template-columns:1fr 5fr;; /* Две колонки с равной шириной */
-  align-items: center; /* Выравнивание по центру по горизонтали */
-  justify-content: center; /* Выравнивание по центру по вертикали */
+  grid-template-columns:1fr 5fr; /* Две колонки с равной шириной */
   gap: 100px; /* Промежуток между колонками */
   margin: 20px 20px; /* Отступы от других элементов */
 }
@@ -139,9 +137,11 @@
   border-top: rgb(14, 96, 137) 5px solid;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  width: 500px;
+  width: 540px;
   margin-bottom: 20px;
-  padding: 10px/* сделано */
+  padding: 10px;/* сделано */
+  margin-top: 7px;
+
 }
 .s-filter .summary {
   display: none;
@@ -150,11 +150,11 @@
 .text-center {
   text-align: center;
   font-size: 14px;
-    min-width: 320px;
-    position: relative;
-    line-height: 1.5;
-    overflow-x: hidden;
-    color: #333;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.5;
+  overflow-x: hidden;
+  color: #faf4f44f4;
 }
 section {
   display: block;
@@ -191,6 +191,118 @@ margin: 5px 5px; /* Отступы от других элементов */
 select{
   margin: 5px 0px;  
 }
-span{
-
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-size: 20px; /* Размер шрифта */
+  color: rgb(14, 96, 137); /* Цвет текста */
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.b-events-download {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-size: 14px; /* Размер шрифта */
+  color: rgb(3, 14, 19); /* Цвет текста */
+}
+.folding_section{
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.toggle-button {
+  font-size: 14px; /* Размер шрифта */
+  font-weight: bold; /* Или можете использовать font-weight: 700; */
+  background: linear-gradient(to bottom right, #1aa406 0%, transparent 40%); /* градиент */
+  color: rgb(14, 12, 12); /* цвет текста */
+  cursor: pointer; /* Курсор при наведении */
+  top: 20px; /* Отступ сверху */
+  height: 30px; /* высота кнопки */
+  border: none; /* убираем стандартную рамку */
+  border-top-left-radius: 10px; /* Скругление верхнего левого угла */
+  border-top-right-radius: 10px; /* Скругление верхнего правого угла */
+}
+.toggle-btn1{
+  width: 110px;
+  height: 20px;
+  font-weight: bold;
+  background: white;
+  border: none;
+  color: #070505;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 14px;
+  margin-left: 85px;/* Отступы от других элементов */
+}
+.section {
+  display: none; /* Секрет по умолчанию */
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 550px; /* Ширина блоков */
+  Border-top: #1aa406 5px solid;
+  height: 330px; /* Задание высоты секции */
+}
+.arrow.inter{
+  border-color: #8d0c2d transparent transparent transparent;
+  border-width: 10px 10px 0 0 ;
+  position: absolute;
+  bottom: 10px; /* Положение относительно кнопки */
+  left: 10px; /* Положение относительно кнопки */
+}
+.arrow {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 11px 11px 0 0;
+  border-color: #EEE transparent transparent transparent;
+}
+.title {
+  font-size: .8em;
+  display: inline-block;
+  margin: 2px 0px 0px 10px;
+}
+.toggle-btn2{
+  width: 96px;
+  height: 20px;
+  font-weight: bold;
+  background: white;
+  border: none;
+  color: #070505;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 14px;
+  margin-left: 5px;/* Отступы от других элементов */
+}
+.arrow.workers{
+  border-color: #1d6174 transparent transparent transparent;
+  border-width: 10px 10px 0 0 ;
+  position: absolute;
+  bottom: 10px; /* Положение относительно кнопки */
+  left: 10px; /* Положение относительно кнопки */
+}
+.toggle-btn3{
+  width: 80px;
+  height: 20px;
+  font-weight: bold;
+  background: white;
+  border: none;
+  color: #070505;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 14px;
+  margin-left: 5px;/* Отступы от других элементов */
+}
+.arrow.filial{
+  border-color: #1aa406 transparent transparent transparent;
+  border-width: 10px 10px 0 0 ;
+  position: absolute;
+  bottom: 10px; /* Положение относительно кнопки */
+  left: 10px; /* Положение относительно кнопки */
 }

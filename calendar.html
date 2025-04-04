@@ -75,9 +75,9 @@
                                                          <span>УРОВЕНЬ СОРЕВНОВАНИЯ</span>
                                                          <select name="category" class="select2 select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
                                                                 <option value="" data-select2-id="3">&nbsp;</option>
-                                                                <option value="tne_bosses" data-select2-id="32">спортакиада руководителей и начальников отделов</option>
-                                                                <option value="workers" data-select2-id="33">спортакиада трудящиеся</option>
-                                                                <option value="branches" data-select2-id="34">спортакиада филиала</option>
+                                                                <option value="tne_bosses" data-select2-id="32">руководители</option>
+                                                                <option value="workers" data-select2-id="33">трудящиеся</option>
+                                                                <option value="branches" data-select2-id="34">филиальные</option>
                                                             </select>
                                                             <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: auto;">
                                                                 <span class="selection">
@@ -138,6 +138,46 @@
                                             </details>
                                         </form>
                                     </section>
+                                    <h1>КАЛЕНДАРЬ СОРЕВНОВАНИЙ</h1>
+                                    <div class="b-events-download">
+                                        <strong>ЕДИНЫЙ КАЛЕНДАРНЫЙ ПЛАН:</strong> 
+                                        <span style="color: #0b4d64;">
+                                         <a href="index.html">ПУЛЕВАЯ СТРЕЛЬБА</a>
+                                        <span style="color: #0b4d64;">, </span>
+                                        <span style="color: #0b4d64;">
+                                         <a href="index.html">СТЕНДОВАЯ СТРЕЛЬБА</a>
+                                        </span>
+                                    </div>
+                                    <div class="folding_section">
+                                        <button class="toggle-button" id="toggleSection1">КАЛЕНДАРЬ</button>
+                                        <button class="toggle-button" id="toggleSection2">СПИСОК</button>   
+                                        <button class="toggle-btn1">
+                                            <div>
+                                             <span class="arrow inter tooltip tooltipstered"></span>
+                                             <span class="title">РУКОВОДИТЕЛИ</span>
+                                            </div>
+                                        </button>
+                                        <button class="toggle-btn2">
+                                            <div>
+                                                <span class="arrow workers tooltip tooltipstered"></span>
+                                                <span class="title">ТРУДЯЩИЕСЯ</span>
+                                            </div>
+                                        </button>
+                                        <button class="toggle-btn3">
+                                            <div>
+                                                <span class="arrow filial tooltip tooltipstered"></span>
+                                                <span class="title">ФИЛИАЛ</span>
+                                            </div>
+                                        </button>
+                                        <div id="section1" class="section">
+                                            <h2>Секция 1</h2>
+                                        </div>   
+                                        <div id="section2" class="section">
+                                            <h2>Секция 2</h2>
+                                            <p>Содержимое секции 2...</p>
+                                        </div>   
+                                    </div>
+                                    <script src="calendar.js"></script>
                                 </div>
                             </div>
                         </div>
